@@ -1,0 +1,12 @@
+from typing import List
+class TwoSum:
+    def twosum(self,nums: List[int],target:int)->bool:
+        seenthisdata = {}
+        for i,number in enumerate(nums):
+          if num in seenthisdata:
+              return True
+          compliment_num = target-num
+          seenthisdata[compliment_num] = i
+        return False
+n = TwoSum()
+print(n.twosum([1,2,3,4,5],6))
