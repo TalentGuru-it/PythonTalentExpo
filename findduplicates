@@ -1,0 +1,6 @@
+from typing import List
+class FindDuplicates:
+      def checkDuplicates(self,nums:List[int])->bool:
+          return len(set(nums))<len(nums)
+n = FindDuplicates()
+print(n.checkDuplicates([1,2,3,4,4]))
