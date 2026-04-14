@@ -1,0 +1,5 @@
+def recsumlist(lst):
+  if not lst:
+    return 0
+  return lst[0]+recsumlist(lst[0:])
+print(recsumlist([1,2,3,4]))
